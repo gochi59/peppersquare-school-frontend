@@ -1,17 +1,13 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/NavbarForSchool";
-import Students from "./pages/Students";
-import Teachers from "./pages/Teachers";
-import NavbarForSchool from "./components/NavbarForSchool";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css';
+import HomePage from './pages/HomePage';
 
 const App: React.FC = () => {
   return (
     <Router>
-      <NavbarForSchool />
       <Routes>
-        <Route path="/students" element={<Students />} />
-        <Route path="/teachers" element={<Teachers />} />
+        <Route path="/" element={<HomePage />} />
       </Routes>
     </Router>
   );
