@@ -5,7 +5,7 @@ const Header: React.FC = () => {
     <header className="header">
       <div className="mask-group">
         <img
-          src="src\assets\science-lab8.jpg" // Replace with your image path
+          src="src/assets/Mask group.jpg" // Replace with your image path
           alt="Header Background"
           className="header-image"
         />

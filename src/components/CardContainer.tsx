@@ -1,33 +1,52 @@
+import { faCalendar } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { Button, Card, CardGroup } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
 const CardContainer = () => {
   return (
-    <div>
-      <CardGroup>
-        <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src="src/assets/OIP.jpg" />
-          <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
-          </Card.Body>
-        </Card>
-        <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src="src/assets/OIP.jpg" />
-          <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
-          </Card.Body>
-        </Card>
-      </CardGroup>
+    <div className="d-flex justify-content-center">
+      <div className="row row-cols-1 row-cols-md-2 g-4 w-75 m-3 mb-4 pb-3">
+        <div className="col d-flex justify-content-center">
+          <Card className="border shadow-sm rounded-4 w-100" >
+            <Card.Img src="src/assets/OIP.jpg" className="rounded-top-4" alt="..." />
+            <Card.Body>
+              <Card.Title className="text-center">Card title</Card.Title>
+            </Card.Body>
+            <Card.Footer className="text-center">
+              <small className="text-muted">
+                <FontAwesomeIcon icon={faCalendar} color="#51bcd2" /> Last updated 3 mins ago
+              </small>
+            </Card.Footer>
+          </Card>
+        </div>
+        <div className="col d-flex justify-content-center">
+          <Card className="border shadow-sm rounded-4 w-100" >
+            <Card.Img src="src/assets/OIP.jpg" className="rounded-top-4" alt="..." />
+            <Card.Body>
+              <Card.Title className="text-center">Card title</Card.Title>
+            </Card.Body>
+            <Card.Footer className="text-center">
+              <small className="text-muted">
+                <FontAwesomeIcon icon={faCalendar} color="#51bcd2" /> Last updated 3 mins ago
+              </small>
+            </Card.Footer>
+          </Card>
+        </div>
+        <div className="col d-flex justify-content-center">
+          <Card className="border shadow-sm rounded-4 w-100" >
+            <Card.Img src="src/assets/OIP.jpg" className="rounded-top-4" alt="..." />
+            <Card.Body>
+              <Card.Title className="text-center">Card title</Card.Title>
+            </Card.Body>
+            <Card.Footer className="text-center">
+              <small className="text-muted">
+                <FontAwesomeIcon icon={faCalendar} color="#51bcd2" /> Last updated 3 mins ago
+              </small>
+            </Card.Footer>
+          </Card>
+        </div>
+      </div>
     </div>
   );
 };

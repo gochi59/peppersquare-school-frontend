@@ -1,12 +1,9 @@
 import React from 'react';
 import Header from '../components/Header';
-import AboutSection from '../components/AboutSection';
-import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
-import HeroSection from '../components/HeroSection';
-import ServicesSection from '../components/ServiceSection';
 import NavbarForSchool from '../components/NavbarForSchool';
 import CardContainer from '../components/CardContainer';
+import NavigationTiles from '../components/NavigationTiles';
 
 
 const HomePage: React.FC = () => {
@@ -14,6 +11,7 @@ const HomePage: React.FC = () => {
     <div className="home-page">
     <NavbarForSchool />
       <Header />
+      <NavigationTiles />
       <CardContainer />
       <Footer />
     </div>
