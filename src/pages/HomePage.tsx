@@ -11,7 +11,6 @@ const HomePage: React.FC = () => {
     <div className="home-page">
     <NavbarForSchool />
       <Header />
-      <NavigationTiles />
       <CardContainer />
       <Footer />
     </div>
