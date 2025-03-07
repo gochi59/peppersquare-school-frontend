@@ -8,7 +8,7 @@ const NavbarForSchool: React.FC = () => {
         {/* Logo */}
         <Navbar.Brand href="/">
           <img
-            src="/logo.png" // Replace with actual logo URL
+            src="src\assets\dbtr-logo.45a21b23fec82c9d4072.png" // Replace with actual logo URL
             alt="School Logo"
             height="50"
           />

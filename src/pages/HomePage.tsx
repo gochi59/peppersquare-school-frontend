@@ -5,16 +5,16 @@ import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 import HeroSection from '../components/HeroSection';
 import ServicesSection from '../components/ServiceSection';
+import NavbarForSchool from '../components/NavbarForSchool';
+import CardContainer from '../components/CardContainer';
 
 
 const HomePage: React.FC = () => {
   return (
     <div className="home-page">
+    <NavbarForSchool />
       <Header />
-      <HeroSection />
-      <AboutSection />
-      <ServicesSection />
-      <ContactSection />
+      <CardContainer />
       <Footer />
     </div>
   );
