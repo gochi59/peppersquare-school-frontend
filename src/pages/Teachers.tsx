@@ -9,7 +9,7 @@ interface Teacher {
   profileImage: { url: string };
 }
 
-const Teachers: React.FC = () => {
+const Teachers = () => {
   const [teachers, setTeachers] = useState<Teacher[]>([]);
 
   useEffect(() => {

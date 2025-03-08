@@ -6,7 +6,7 @@ import CardContainer from '../components/CardContainer';
 import NavigationTiles from '../components/NavigationTiles';
 
 
-const HomePage: React.FC = () => {
+const HomePage = () => {
   return (
     <div className="home-page">
     <NavbarForSchool />

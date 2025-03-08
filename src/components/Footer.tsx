@@ -1,11 +1,17 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import { FaTwitter, FaLinkedin, FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
+import {
+  FaTwitter,
+  FaLinkedin,
+  FaInstagram,
+  FaFacebook,
+  FaYoutube,
+} from "react-icons/fa";
 
-const Footer: React.FC = () => {
+const Footer = () => {
   return (
-    <footer className= "bg-secondary-subtle">
-      <Container className="">
+    <footer className="bg-secondary-subtle">
+      <Container className="    ">
         <Row className="align-items-center">
           <Col lg={2} md={12} className="text-center mb-4 mb-lg-0">
             <img
@@ -17,20 +23,42 @@ const Footer: React.FC = () => {
           </Col>
 
           <Col lg={2} md={6} className="text-center text-lg-start mb-lg-0">
-            <h5 className="fw-bold mb-1 text-wrap">DBTR National Higher Secondary School</h5>
+            <h5 className="fw-bold mb-1 text-wrap">
+              DBTR National Higher Secondary School
+            </h5>
             <p className="text-primary fw-semibold">Virtuousness is Life</p>
             <p className="text-muted">
-              Established in 1901, DBTR is situated in the temple town of Mayiladuthurai.
+              Established in 1901, DBTR is situated in the temple town of
+              Mayiladuthurai.
             </p>
           </Col>
 
           <Col lg={2} md={6} className="text-center text-lg-start mb-lg-0 mt-0">
             <h5 className="fw-bold mb-5 text-wrap">Quick Links</h5>
             <ul className="list-unstyled px-2">
-              <li><a href="#admissions" className="text-dark text-decoration-none">Admissions</a></li>
-              <li><a href="#alumni" className="text-dark text-decoration-none">Alumni association</a></li>
-              <li><a href="#donate" className="text-dark text-decoration-none">Donate</a></li>
-              <li><a href="#events" className="text-dark text-decoration-none">Events</a></li>
+              <li>
+                <a
+                  href="#admissions"
+                  className="text-dark text-decoration-none"
+                >
+                  Admissions
+                </a>
+              </li>
+              <li>
+                <a href="#alumni" className="text-dark text-decoration-none">
+                  Alumni association
+                </a>
+              </li>
+              <li>
+                <a href="#donate" className="text-dark text-decoration-none">
+                  Donate
+                </a>
+              </li>
+              <li>
+                <a href="#events" className="text-dark text-decoration-none">
+                  Events
+                </a>
+              </li>
             </ul>
           </Col>
 
@@ -43,7 +71,10 @@ const Footer: React.FC = () => {
             </p>
             <p className="fw-bold mb-1">+91.436.422.3272</p>
             <p>
-              <a href="mailto:contact@nationalhighschool.in" className="text-dark text-decoration-none">
+              <a
+                href="mailto:contact@nationalhighschool.in"
+                className="text-dark text-decoration-none"
+              >
                 contact@nationalhighschool.in
               </a>
             </p>
@@ -51,7 +82,14 @@ const Footer: React.FC = () => {
 
           <Col lg={2} md={6} className="text-center text-lg-start mb-lg-0">
             <p className="fw-bold">Big or small, you can make an impact.</p>
-            <Button variant="danger" className="fw-bold px-4 py-2">
+            <Button
+              style={{
+                backgroundColor: "#F54E39",
+                borderColor: "#F54E39",
+                color: "#fff",
+              }}
+              className="fw-bold px-4 py-2"
+            >
               Donate <span style={{ fontSize: "1.3rem" }}>♥</span>
             </Button>
           </Col>
@@ -76,7 +114,10 @@ const Footer: React.FC = () => {
             </p>
           </Col>
 
-          <Col md={6} className="d-flex ps-5 align-items-start justify-content-end">
+          <Col
+            md={6}
+            className="d-flex ps-5 align-items-start justify-content-end"
+          >
             <FaTwitter className="mx-2 fs-5 text-dark" />
             <FaLinkedin className="mx-2 fs-5 text-dark" />
             <FaInstagram className="mx-2 fs-5 text-dark" />

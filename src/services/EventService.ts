@@ -1,34 +1,34 @@
 import { axiosInstance } from "./axiosInstance";
 
-export const getEvents = async () => {
+export const getEvents = async (str: string) => {
     try {
-      const response = await axiosInstance.get("/events",{
+      const response = await axiosInstance.get(`/event-groups/${str}`, {
         params: {
-            populate: "image", 
+          populate: {
+            events: {
+              populate: "image", 
+            },
           },
+        },
       });
       return response.data;
     } catch (error) {
-      console.error("Error fetching users:", error);
+      console.error("Error fetching events:", error);
       throw error;
     }
   };
 
-export const getEventGroups=async(str:string)=>{
+export const getEventById=async(id:number)=>{
     try {
-        const response = await axiosInstance.get("/event-groups", {
-          params: {
-            filters: {
-              name: {
-                $eq: str, // Filter by name
+        const response=await axiosInstance.get(`/events/${id}`,{
+            params: {
+                populate: "image", 
               },
-            },
-            populate: "*", // Populate all relations (optional)
-          },
         });
-        return response.data.data[0]; // Return the first matching event group
-      } catch (error) {
-        console.error("Error fetching event group by name:", error);
-        throw error;
-      }
+        return response.data;
+    } catch (error) {
+        console.log(error);
+    }
 }
+
+

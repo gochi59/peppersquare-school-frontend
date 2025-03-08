@@ -11,7 +11,7 @@ export const axiosInstance=axios.create(
 
 axiosInstance.interceptors.request.use(
     (config) => {
-      console.log("Request Interceptor:", config);
+    //   console.log("Request Interceptor:", config);
       return config;
     },
     (error) => {

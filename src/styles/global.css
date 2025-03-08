@@ -1,5 +1,8 @@
+* {
+  font-family: 'Playfair Display', serif !important;
+}
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Playfair Display', serif; 
   margin: 0;
   padding: 0;
   min-width: 100%;
@@ -7,8 +10,34 @@ body {
   display: flex;
   flex-direction: column;
 }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
 
-/* Header.css */
+
+
+p {
+  font-family: 'Playfair Display', serif;
+}
+.nav-tile {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-tile.selected {
+  background-color: #007bff; 
+  color: white; 
+}
+
+.nav-tile:hover {
+  background-color: #e9ecef; 
+}
+
+
 .header {
   position: relative;
   width: 100%;

@@ -10,7 +10,7 @@ interface Student {
   profileImage: { url: string };
 }
 
-const Students: React.FC = () => {
+const Students = () => {
   const [students, setStudents] = useState<Student[]>([]);
 
   useEffect(() => {

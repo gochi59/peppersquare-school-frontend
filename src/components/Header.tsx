@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Header: React.FC = () => {
+const Header = () => {
   return (
     <header className="header">
       <div className="mask-group">
         <img
-          src="src/assets/Mask group.jpg" // Replace with your image path
+          src="src/assets/Mask group.jpg" 
           alt="Header Background"
           className="header-image"
         />

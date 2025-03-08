@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HeroSection: React.FC = () => {
+const HeroSection = () => {
   return (
     <section className="hero-section">
       <h1>Welcome to National High School</h1>
